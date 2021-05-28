@@ -1,0 +1,51 @@
+
+  section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;  
+  }
+  h1 {
+    text-align: center;
+    color: #383838;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  hr {
+      background: #F5BD41;
+        width: 100px;
+        height: 4px;
+        left: 670px;
+        top: 1087px;
+  }
+  h2 {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #383838;
+
+  }
+  article {
+    flex: 1;
+    align-items: center;  
+    padding: 10px;
+    margin: 10px;
+    width: 296px;
+    height: 176px;
+    top: 271px;
+    box-sizing: border-box;
+  }
+ div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+#img {
+  padding-bottom: 15px;
+}
