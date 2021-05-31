@@ -1,0 +1,122 @@
+@import url(fonds.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.block {
+  width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
+}
+.block-name {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+}
+
+.line {
+  width: 100px;
+  height: 4px;
+  background-color: #F5BD41;
+  margin: 0 auto;
+  border: none;
+  margin-bottom: 80px;
+}
+
+.block-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.row {
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.item-text {
+  margin-top: 48px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #383838;
+}
+
+footer {
+  width: 1440px;
+  height: 630px;
+  padding: 120px 104px 200px 104px;
+  margin: 0 auto;
+  background-color: #10367C;
+}
+
+.footer-main-text {
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.footer-text {
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.block-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 63px;
+}
+
+.block-about {
+  display: flex;
+  width: 193px;
+  height: 211px;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.block-preperty-types {
+  display: flex;
+  width: 133px;
+  height: 310px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block-support{
+  display: flex;
+  width: 233px;
+  height: 122px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block-data {
+  padding-left: 103px;
+}
