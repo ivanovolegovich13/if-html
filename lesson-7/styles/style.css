@@ -6,8 +6,10 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+/* Style header */
 
 header {
+  width: 100%;
   background-image: url(../pictures/castelmezzano-1979546\ 1.png);
   background-color:  rgba(18, 18, 18, 0.25);
   background-position: center;
@@ -35,7 +37,9 @@ header {
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
+  text-decoration: none;
 }
+
 .header-text:hover::after {
   content: '';
   margin: 0 auto;
@@ -105,7 +109,29 @@ svg:hover {
   height: 21px;
 }
 
+.header-label {
+  display: flex;
+}
+
+.header-label-location  {
+  padding-left: 24px;
+  padding-right: 150px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.header-label-data {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF; 
+}
+
 .header-text-content {
+  padding-top: 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -175,11 +201,15 @@ input {
 .header-makret-google {
   padding-right: 16px;
 }
+
+ /* Style What do we offer */
+
 .block-advantages {
-  width: 1264px;
+  max-width: 1232px;
   padding: 120px 16px;
   margin: 0 auto;
 }
+
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -194,7 +224,7 @@ h2::after {
   background-color: #F5BD41;
   content: "";
   display: block;
-  width: 100px;
+  width: 10%;
   height: 4px;
   margin: 0 auto;
   border: none;
@@ -211,7 +241,7 @@ h2::after {
 }
 
 .item {
-  width: 25%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,12 +265,13 @@ h2::after {
   color: #383838;
 }
 
+/* Style footer */
+
 footer {
   background-color: #10367C;
 }
 
 .footer-main-text {
-
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -258,16 +289,18 @@ footer {
 }
 
 .block-footer {
-  width: 1264px;
+  max-width: 1232px;
   padding: 120px 50px;
   margin: 0 auto;
+}
+
+.footer-pictures {
+  display: none;
 }
 
 .row-footer {
   display: flex;
   justify-content: flex-start;
-  margin-left: -8px;
-  margin-right: -8px;
 }
 
 .about {
@@ -292,9 +325,7 @@ footer {
 
 .data {
   padding-top: 64px;
-  margin-left: -8px;
-  margin-right: -8px;
-}
+} 
 
 .data-text {
   font-style: normal;
@@ -304,3 +335,150 @@ footer {
   text-align: center;
   color: #FFFFFF;
 }
+
+/* media query */
+
+@media (max-width:1200px) {
+  .block-advantages {
+    max-width: 970px;
+  }
+  .block-footer {
+    max-width: 970px;
+  }
+  .footer-pictures {
+    display: none;
+  }
+}
+
+@media (max-width:992px) {
+  .block-advantages {
+    max-width: 750px;
+  }
+  .block-footer {
+    max-width: 750px;
+  }
+  .footer-pictures {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .block-advantages {
+    max-width: none;
+    padding: 24px 73px;
+  }
+
+  .block-footer {
+    max-width: none;
+    padding: 40px 67px;
+  }
+  
+  h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 35px;
+  }
+  h2::after {
+    display: none;
+  }
+
+  .row-advantages {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .block-image {
+    width: auto;
+    height: auto;
+  }
+
+  .item {
+    width: auto;
+    padding-bottom: 30px
+  }
+  
+  .item-text {
+    margin-top: 19px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .image-support {
+    width: 52px;
+    height: 64px;
+  }
+  
+  .image-communicate {
+    width: 58px;
+    height: 58px;
+  }
+
+  .image-book {
+    width: 70px;
+    height: 46px;
+  }
+
+  .image-guest {
+    width: 64px;
+    height: 58px;
+  }
+  
+  .footer-pictures {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  .about {
+    padding-right: 16px;
+    height: auto;
+  }
+
+  .preperty-types {
+    padding-right: 16px;
+    height: auto;
+  }
+
+  .support {
+    height: auto;
+  }
+
+  .data {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .row-footer {
+    justify-content: center;
+    height: 20px;
+  }
+  .footer-main-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: underline;
+  }
+  .data {
+    padding-top: 32px;
+  }
+
+  .data-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .footer-text {
+    display: none;
+  }
+} 
